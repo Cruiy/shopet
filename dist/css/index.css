@@ -12,7 +12,7 @@ a{
 
 
 
-#bann,#sou,#nav{
+#bann,#sou,#nav,#lunbo,#miaosha,#food,#lingshi,#dictor,#days,#clothes,#footer{
     width:1196px;
     margin: 0 auto;
     
@@ -20,6 +20,12 @@ a{
 
 
 /*顶部*/
+.top_warp{
+	width: 100%;
+	height:28px;
+	background: #F5F5F5;
+	 border-bottom: 1px solid #dddddd;
+}
 #top{
 	width:1263px;
     margin: 0 auto;
@@ -37,7 +43,7 @@ a{
     color: #ff6600;
 }
 #top .list{
-    margin-left: 5px;
+    margin-left: 30px;
 }
 
 #top .list li{
@@ -137,11 +143,86 @@ a{
 	width:80px;
 	margin-top: 0;
 }
+#tlian{
+	width:410px;
+	min-height:100px;
+	background: white;
+	position: absolute;
+	border:1px solid #dddddd;
+	left:130px;
+	top:28px;
+	display: none;
+}
+#t_nav{
+	width:400px;
+	height:24px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border-bottom: 1px solid #DDDDDD
+	
+}
+#t_nav li{
+	height:24px;
+	width:70px;
+	border:1px solid #DDDDDD;
+	border-bottom: none;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 24px;
+	float: left;
+	background: white;
+	
+}
+.tlian_list{
+	
+}
+#tshuju .tshi1{
+	margin-top: 4px;
+}
+#tshuju .tshi1 span{
+	margin-left: 15px;
+	color:#999999;
+}
+#tshuju .tshi1 a{
+	
+	padding: 3px 5px;
+	width: 44px;
+	height:17px;
+	
+}
+.tshu1{
+	border-left: 1px dashed #DDDDDD;
+}
+.aa{
+	background: orangered;
+}
+.tcheng1{
+	margin-top: 4px;
+	display: none;
+}
+.tcheng a{
+	
+	padding: 3px 5px;
+	width: 44px;
+	height:17px;
+	
+}
+.txian1{
+	margin-top: 4px;
+	display: none;
+}
+.txian a{
+	
+	padding: 3px 5px;
+	width: 44px;
+	height:17px;
+	
+}
 /*banner*/
 #bann{
     height:80px;
     margin: 0 auto;
-    background: green;
+    background: url(../images/bann.jpg);
 }
 
 /*搜索栏*/
@@ -150,9 +231,103 @@ a{
     margin-top: 23px;
     margin-bottom: 20px;
     background: goldenrod;
-  
+   
+  	
 }
+.sou_tu{
+	height:82px;
+	width:131px;
+	background: url(../images/sou1.jpg);
+	margin-left: 48px;
+	float: left;
+}
+
+.sou_s{
+	width:478px;
+	height:68px;
+	float: left;
+	background: yellow;
+	margin-left: 120px;
+	padding-top: 14px;
+}
+.sous_1{
+	height: 30px;
+	width:402px;
+	border:1px solid #459d36;
+}
+.sous_2{
+	width: 74px;
+	height:32px;
+	border: none;
+	background: #459d36;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav*/
 #nav{
     height:34px;
     background: red;
+}
+/*lunboyu*/
+#lunbo{
+	height:360px;
+	background: greenyellow;
+}
+/*秒杀*/
+#miaosha{
+	height:460px;
+	background: hotpink;
+	margin-top: 30px;
+}
+/*主食*/
+#food{
+	height:576px;
+	margin-top: 52px;
+	background: darkcyan;
+}
+
+/*零食*/
+#lingshi{
+	height:576px;
+	background: darkmagenta;
+	margin-top: 33px;
+}
+/*医疗*/
+#dictor{
+	height:576px;
+	background: aquamarine;
+	margin-top: 33px;
+}
+/*日常*/
+#days{
+	height: 576px;
+	background: gold;
+	margin-top: 33px;
+}
+/*服装*/
+#clothes{
+	height: 576px;
+	background: red;
+	margin-top: 33px;
+}
+/*footer*/
+#footer{
+	height:456px;
+	background: firebrick;
+	margin-top: 30px;
 }
