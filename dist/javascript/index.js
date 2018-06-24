@@ -52,6 +52,9 @@ $(".tsan").hover(function(){
 })
 
 
+
+
+//三级联动
 $("#t_nav li").click(function(){
 	$(this).css("background","white").siblings().css("background","#f6f6f6")
 })
@@ -62,10 +65,31 @@ $(".tshi1 a").click(function(){
 	$(".tshi1").hide();
 	$(".tcheng1").show();
 	$arr=$(this).text();
+	var str1=json[$arr];
+	for(var i in str1){
+		var strcheng="<a href='#'>"+i+"</a>";
+		$(".tcheng1").append(strcheng);
+		
+	}
+	$arr=$(this).text();
 	console.log($arr)
 	$(".tcheng1 a").click(function(){
+	
+		
+		
+		
+		
 	$(this).addClass("aa").siblings().removeClass("aa");
 	$(".tnav_2").text($(this).text()).css("background","#f6f6f6")
+	$arr=$(this)
+	$strxian=$(this).text();
+	var strxian=str1[$strxian];
+	for(var j=0;j<strxian.length;j++){
+		var strxians="<a href='#'>"+strxian[j]+"</a>"
+		$(".txian1").append(strxians);
+		
+	}
+	
 	$(".tcheng1").hide();
 	$(".txian1").show();
 	
@@ -73,6 +97,8 @@ $(".tshi1 a").click(function(){
 	$(this).addClass("aa").siblings().removeClass("aa");
 	$(".tnav_3").text($(this).text()).css("background","#f6f6f6")
 	$(".tsan").text($arr);
+	$(".tcheng1").remove(strcheng);
+	
 })
 })
 })
@@ -100,6 +126,8 @@ $(".tnav_3").click(function(){
 $(".nav_left1").hover(function(){
 	$(this).css("background","#3e0371");
 	$(".nav_left2").css("background","")
+	$("#nav_dog").show()
+	$("#shop").hide()
 	$(".nav_left1").mouseover(function(){
 		$(this).find("img").attr("src","../images/navle1.jpg")
 })
@@ -111,6 +139,8 @@ $(".nav_left1").mouseout(function(){
 $(".nav_left2").hover(function(){
 	$(this).css("background","#3e0371");
 	$(".nav_left1").css("background","")
+	$("#nav_dog").hide()
+		$("#shop").show()
 })
 
 
@@ -147,13 +177,9 @@ $("#shop .shop_d1").hover(function(){
 		$(this).eq($index).children().css("border-bottom","none");
 		
 	}
-	
-	
+		
 },function(){
-	$(this).children().css("border-bottom","1px dashed #DDDDDD;")
-	
-	
-	
+	$(this).css("border-bottom","1px dashed #DDDDDD;").removeClass("shop_borderbo").siblings().removeClass("shop_borderle");	
 })
 
 
