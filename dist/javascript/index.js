@@ -39,7 +39,7 @@ $(".tphone").hover(function(){
 },function(){
 	$(".tph").hide()
 })
-
+//地址三级联动--待完成
 $(".tsan").hover(function(){
 	$("#tlian").show()
 	$("#tlian").hover(function(){
@@ -95,15 +95,66 @@ $(".tnav_3").click(function(){
 	$(".txian1").show();
 })
 
+//nav左侧边框
+
+$(".nav_left1").hover(function(){
+	$(this).css("background","#3e0371");
+	$(".nav_left2").css("background","")
+	$(".nav_left1").mouseover(function(){
+		$(this).find("img").attr("src","../images/navle1.jpg")
+})
+
+$(".nav_left1").mouseout(function(){
+		$(this).find("img").attr("src","../images/nav_le.gif")
+})
+})
+$(".nav_left2").hover(function(){
+	$(this).css("background","#3e0371");
+	$(".nav_left1").css("background","")
+})
 
 
 
+$(".nav_left1").mouseover(function(){
+		$(this).find("img").attr("src","../images/navle1.jpg")
+})
+
+$(".nav_left1").mouseout(function(){
+		$(this).find("img").attr("src","../images/nav_le.gif")
+})
+$(".nav_left2").mouseover(function(){
+		$(this).find("img").attr("src","../images/navle2.jpg")
+})
+
+$(".nav_left2").mouseout(function(){
+		$(this).find("img").attr("src","../images/nav_le2.gif")
+})
 
 
+//nav_zj
+$(".nav_n").hover(function(){
+	$(this).css("background","");
+	
+})
 
-
-
-
+//商品分类
+$("#shop .shop_d1").hover(function(){
+	$index=$(this).index();
+	$(this).addClass("shop_borderbo").removeClass("shop_borderle").siblings().removeClass("shop_borderbo").addClass("shop_borderle");
+	$(this).children().css("border","none");
+	if($index!=0){
+		$index=$index-1;
+		$(this).eq($index).children().css("border-bottom","none");
+		
+	}
+	
+	
+},function(){
+	$(this).children().css("border-bottom","1px dashed #DDDDDD;")
+	
+	
+	
+})
 
 
 

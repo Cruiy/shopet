@@ -238,7 +238,7 @@ a{
 	height:82px;
 	width:131px;
 	background: url(../images/sou1.jpg);
-	margin-left: 48px;
+	margin-left: 50px;
 	float: left;
 }
 
@@ -247,7 +247,7 @@ a{
 	height:68px;
 	float: left;
 	background: yellow;
-	margin-left: 120px;
+	margin-left: 122px;
 	padding-top: 14px;
 }
 .sous_1{
@@ -264,30 +264,309 @@ a{
 }
 
 
+/*热搜词*/
+.sou_hot{
+	font-size: 12px;
+	color: #999999;
+	margin-top: 12px;
+}
+.sou_hot a{
+	margin: 0 10px;
+	color: #999999;
+}
+.sou_hot .sou_hota1{
+	margin-left: 0;
+	color: red;
+}
 
+.sou_hot>span{
+	color: #999999;
+}
+.sou_hot a:hover{
+	color:black;
+}
 
+/*phone*/
+.sou_img{
+	float: left;
+	margin-left: 59px;
+	margin-top: 20px;
+}
 
-
-
-
-
-
-
-
-
-
+/*gouwucche*/
+.sou_g{
+	height:35px;
+	width:71px;
+	font-size: 12px;
+	border:1px solid #f4f4f4;
+	border-radius: 14px;
+	margin-left: 88px;
+	float: left;
+	margin-top: 14px;
+	background: #fcfcfc url(../images/soug.jpg) no-repeat;
+	line-height: 35px;
+	padding-left: 50px;
+}
+.sou_g span{
+	color: red;
+}
 
 
 /*nav*/
 #nav{
     height:34px;
-    background: red;
+    background: white;
+   
 }
+/*左边边框*/
+.nav_left{
+	height:32px;
+	width:1020px;
+	/*border:1px solid #e1e1e1*/
+	
+	
+}/**/
+
+.nav_left li{
+	float: left;
+	height:32px;
+	width:113px ;
+
+	text-align: center;
+	line-height: 32px;
+	font-size: 15px;
+}/**/
+.nav_left li{
+	display: block;
+	float: left;
+	height:32px;
+	width:113px ;
+	
+	text-align: center;
+	line-height: 32px;
+	font-size: 15px;
+	/*border: 1px solid #E1E1E1;*/
+}
+
+.nav_left1{
+	border: 1px solid #E1E1E1;
+	border-right: none;
+}
+.nav_left2{
+	border: 1px solid #E1E1E1;
+	
+}
+/*导航nav_n*/
+
+#nav .nav_n{
+	height:34px;
+	float: left;
+	font-size: 15px;
+	font-weight: 900;
+	position: relative;
+	
+	padding:0 7px;
+	/*margin: 0 25px;*/
+}
+.nav_n img{
+	position: absolute;
+	left:10px;
+	top:8px;
+}
+.nav_n:hover a{
+	color:#459d36;
+}
+.a1{
+	margin-left: 10px;
+}
+
+/*dog*/
+#nav_dog{
+	width:229px;
+	height:358px;
+	background: white;
+	position: absolute;
+	top:270px;
+	left:34px;
+}
+.dog{
+	width:229px;
+	height:120px;
+	background: #f5f5f5;
+}
+
+.nav_dtu{
+	
+	float: left;
+	margin-top: 28px;
+	margin-left: 23px;
+}
+
+#nav_dog .nav_dword{
+	width:112px;
+	height:66px;
+	
+	float: left;
+	margin-top: 20px;
+	margin-left: 12px;
+	
+	font-size: 12px;
+}
+.nav_dword span{
+	color:#f1713e;
+	
+}
+.nav_dword div{
+	margin:10px 0;
+}
+.nav_dword p{
+	width:108px;
+	height:28px;
+	color: #aeaeae;
+	border:1px solid #999999;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 28px;
+}
+.nav_dword p:hover{
+	background: #DDDDDD;
+}
+
+.cat{
+	background: white;
+	border-bottom:1px dashed #DDDDDD;
+}
+.cat p{
+	border-color:#e74085;
+	color: #e74085;
+	
+}
+.fish{
+	background: white;
+	
+}
+.fish p{
+	border-color:#059ee0;
+	color: #059ee0;
+	
+}
+.cat p:hover{
+	background: #e33f83;
+	color: white;
+}
+
+.fish p:hover{
+	background: #71b7f9;
+	color: white;
+}
+
+#shop{
+	width:229px;
+	height:358px;
+	background: #fcfcfc;
+	position: absolute;
+	top:270px;
+	left:34px;
+	
+	
+}
+.shop_d1{
+	
+	width:229px;
+	font-size: 13px;
+	
+	background: url(../images/navsj.jpg) no-repeat 206px 20px;
+	float: left;
+}
+.shop_d1 li{
+	width: 102px;
+	height:50px;
+	float: left;
+	line-height: 50px;
+
+	border-bottom: 1px dashed #DDDDDD;
+}
+.shop_li1{	
+	margin-left: 12px;
+	
+}
+.shop_d1 strong{
+	font-weight: 100;
+}
+.shop_d1 span{
+	color: #DDDDDD;
+}
+
+#shop .shop_last{
+	background: white url(../images/shopl.jpg) no-repeat 22px 12px;
+	
+	
+}
+#shop .shop_li2{	
+	width:180px;
+	border-bottom: none;
+	margin-left: 44px;
+	
+}
+
+#shop_sapn{
+	
+	display: block;
+	float: right;
+	width:30px;
+	height:20px;
+	background: #fb6003;
+	color:white;
+	font-size: 12px;
+	border-radius: 9px;
+	text-align: center;
+	line-height: 20px;
+	margin-right: 25px;
+	margin-top: 16px;
+	
+}
+
+.shop_borderbo{
+	border-bottom: 1px solid #22990d;
+	border-top: 1px solid #22990d;
+	border-left: none;
+	border-right: none;
+	background: white;
+	
+}
+.shop_borderle{
+	border-left: 1px solid #22990d;
+	border-right: 1px solid #22990d;
+	border-bottom: none;
+	border-top: none;
+}
+
+
+
+
 /*lunboyu*/
 #lunbo{
 	height:360px;
 	background: greenyellow;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*秒杀*/
 #miaosha{
 	height:460px;
