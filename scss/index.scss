@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#top{
+    width:1263px;
+    margin: 0 auto;
+}
+#banner,#sou,#nav{
+    width:1229px;
+    margin: 0 auto;
+    padding-right: 34px;
+}
+
+
+//顶部
+#top{
+    height:28px;
+    width:1263px;
+    background: #f5f5f5;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+    line-height: 28px;
+}
+#top li:hover a{
+    color: blue;
+}
+#top .orange:hover a{
+    color: #ff6600;
+}
+#top .list{
+    margin-left: 5px;
+}
+
+#top .list li{
+    float: left;
+    margin-right: 10px;
+}
+#top .tlb1{
+    margin-left: 6px;
+}
+#top .list li span{
+    color: red;
+}
+#top .txx{
+    float: right;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-left: 6px;
+}
+#top .tlist2{
+    float: right;
+    margin-right: 36px;
+}
+#top .tlist2 li{
+    float: left;
+    margin-left: 12px;
+}
+#top .tlist2 span{
+    color: #ff0000;
+}
+//#twen{
+//  color: #FF6600;
+//}
+//#top .tju{
+//  color: #ff6600;
+//}
+#top img{
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-right: 6px;
+    background: red;
+}
+#top .txw{
+    margin-top: 9px;
+}
+#top .sj{
+    float: right;
+   margin-left: 6px;
+   margin-right: 0;
+   margin-top: 12px;
+}
+#top .tlast:hover span{
+    color: blue;
+}
+//.tec:hover .sj{
+//  transform: rotateX(36deg);
+//}
+
+#tdetal{
+     background: white;  
+}
+
+
+//banner
+#banner{
+    height:80px;
+   
+    margin: 0 auto;
+    background: green;
+}
+
+//搜索栏
+#sou{
+    height:82px;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    background: goldenrod;
+}
+#nav{
+    height:34px;
+    background: red;
+}
