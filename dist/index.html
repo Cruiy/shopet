@@ -8,7 +8,6 @@
 		<script src="javascript/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="javascript/json.js" type="text/javascript" charset="utf-8"></script>
 		<script src="javascript/yuan.js" type="text/javascript" charset="utf-8"></script>
-		<script src="javascript/startMove.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--顶部-->
@@ -39,7 +38,7 @@
 				</li>
 			</ul>
 			<ul class="tlist2">
-				<li>南园</li>
+				<li id="inde_name">南园</li>
 				<li><a href="">[退出]</a></li>
 				<li>
 					<a href="#">
@@ -187,8 +186,11 @@
 			<div class="sou_tu"></div>
 			
 			<div class="sou_s">
-				<input type="text" name="" class="sous_1" value="" />
+				<input type="text" name=""id="txt" class="sous_1" value="" />
 				<input type="button" name="" class="sous_2" value="搜索" />
+				<ul class="sous_list"id="list">
+					<li></li>
+				</ul>
 				<div class="sou_hot">
 					<span>热门搜索：</span>
 					<a class="sou_hota1" href="#">冠能</a>|
@@ -508,16 +510,16 @@
 					
 					</span>
 					<a href="#">
-						<img src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
+						<img class="miaosha_pic"src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
 						<p class="maio_jiehshao">零售零食</p>
 						<p class="miao_jiage">
-							<span class="hong small" >￥</span>
+							
 							<span class="hong">
-								300
+								<span class="hong small" >￥</span>300
 							</span>
 							<sapn class="hui small">3000</sapn>
 							
-							<span class="hui small right">仅限一件</span>
+							<span class="lingshi_span hui small right">仅限一件</span>
 						</p>
 					</a>
 					<a class="miao_btn" href="#">即将开始</a>
@@ -527,16 +529,16 @@
 					
 					</span>
 					<a href="#">
-						<img src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
+						<img class="miaosha_pic"src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
 						<p class="maio_jiehshao">零售零食</p>
 						<p class="miao_jiage">
-							<span class="hong small" >￥</span>
+							
 							<span class="hong">
-								300
+								<span class="hong small" >￥</span>300
 							</span>
 							<sapn class="hui small">3000</sapn>
 							
-							<span class="hui small right">仅限一件</span>
+							<span class="lingshi_span hui small right">仅限一件</span>
 						</p>
 					</a>
 					<a class="miao_btn" href="#">即将开始</a>
@@ -546,16 +548,16 @@
 					
 					</span>
 					<a href="#">
-						<img src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
+						<img class="miaosha_pic"src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
 						<p class="maio_jiehshao">零售零食</p>
 						<p class="miao_jiage">
-							<span class="hong small" >￥</span>
+							
 							<span class="hong">
-								300
+								<span class="hong small" >￥</span>300
 							</span>
 							<sapn class="hui small">3000</sapn>
 							
-							<span class="hui small right">仅限一件</span>
+							<span class="lingshi_span hui small right">仅限一件</span>
 						</p>
 					</a>
 					<a class="miao_btn" href="#">即将开始</a>
@@ -565,16 +567,16 @@
 					
 					</span>
 					<a href="#">
-						<img src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
+						<img class="miaosha_pic"src="images/1f413625dacd95dde472be1a353cb212.jpg@!200w-c.jpg" alt="" />
 						<p class="maio_jiehshao">零售零食</p>
 						<p class="miao_jiage">
-							<span class="hong small" >￥</span>
+							
 							<span class="hong">
-								300
+								<span class="hong small" >￥</span>300
 							</span>
 							<sapn class="hui small">3000</sapn>
 							
-							<span class="hui small right">仅限一件</span>
+							<span class="lingshi_span hui small right">仅限一件</span>
 						</p>
 					</a>
 					<a class="miao_btn" href="#">即将开始</a>
@@ -641,7 +643,7 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-							<img src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
+							<img class="foodpic"src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
 						</div>
 						
 						
@@ -651,14 +653,14 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"class="food_pp1_img1" src="images/der.jpg"/>
 							</div>
 							<div class="food_pp1">
 								<div class="food_word">
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"class="food_pp1_img1" src="images/der.jpg"/>
 								
 							</div>
 						</div>
@@ -791,7 +793,7 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-							<img src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
+							<img class="foodpic"class="foodpic"src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
 						</div>
 						
 						
@@ -801,14 +803,14 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 							</div>
 							<div class="food_pp1">
 								<div class="food_word">
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 								
 							</div>
 						</div>
@@ -944,7 +946,7 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-							<img src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
+							<img class="foodpic"class="foodpic"src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
 						</div>
 						
 						
@@ -954,14 +956,14 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 							</div>
 							<div class="food_pp1">
 								<div class="food_word">
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 								
 							</div>
 						</div>
@@ -1095,7 +1097,7 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-							<img src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
+							<img class="foodpic"class="foodpic"src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
 						</div>
 						
 						
@@ -1105,14 +1107,14 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 							</div>
 							<div class="food_pp1">
 								<div class="food_word">
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 								
 							</div>
 						</div>
@@ -1245,7 +1247,7 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-							<img src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
+							<img class="foodpic"src="../images/7db34c4056c8d07d7bd3cb2341a11287.jpg@!water.jpg"/>
 						</div>
 						
 						
@@ -1255,14 +1257,14 @@
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1" src="images/der.jpg"/>
 							</div>
 							<div class="food_pp1">
 								<div class="food_word">
 									狗狗
 									<p class="hong">帮助清洁牙齿</p>
 								</div>
-								<img src="images/der.jpg"/>
+								<img class="foodpic1"src="images/der.jpg"/>
 								
 							</div>
 						</div>
@@ -1533,5 +1535,26 @@
 			
 			
 		</div>
+		<script type="text/javascript">
+			//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=aa&cb=bb
+			var oTxt = document.getElementById("txt");
+			var oList = document.getElementById("list");
+			oTxt.oninput = function(){
+				var val = oTxt.value;
+				var oScript = document.createElement("script");
+				oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+val+"&cb=bb";
+				document.body.appendChild(oScript);
+				document.body.removeChild(oScript);
+			}
+			
+			function bb(data){
+				var str = "";
+				var arr = data.s;
+				for(var i = 0; i <arr.length; i++){
+					str += "<li><a href='https://www.baidu.com/s?wd="+arr[i]+"'>"+arr[i]+"</a></li>";
+				}
+				oList.innerHTML = str;
+			}
+		</script>
 	</body>
 </html>
