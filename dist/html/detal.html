@@ -5,7 +5,9 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
 		<script src="../javascript/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 		<script src="../javascript/index.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 	<body>
 		
@@ -412,21 +414,20 @@
 			<!--*********left*********-->
 			<div class="detal_main_left">
 				<div class="zoomBox">
-			<div class="midArea">
-				<img src="images/0ee0a006978155f12a59aceb39c3fb2c.jpg@!water.jpg">
-				<div class="zoom"></div>
-			</div>
-			<div class="bigArea">
-				<img src="images/0ee0a006978155f12a59aceb39c3fb2c.jpg@!water.jpg">
-			</div>
-			<div class="smallArea">
+					<div class="midArea">
+						<img src="images/0ee0a006978155f12a59aceb39c3fb2c.jpg@!water.jpg">
+						<div class="zoom"></div>
+					</div>
+					<div class="bigArea">
+						<img src="images/0ee0a006978155f12a59aceb39c3fb2c.jpg@!water.jpg">
+					</div>
+					<div class="smallArea">
 				
-			</div>
-		</div>
+					</div>
+				</div>
 		
 		<!--	<img class="detal_smallimg" src="">-->
-		
-		
+
 			</div>
 			<!--*************right**********-->
 			<div class="detal_main_right">
@@ -435,14 +436,14 @@
 					<div class="detal_main_left_jgs">市场价：100000￥
 					</div>
 					<div class="detal_main_left_jgw">
-							<span>E宠价：</span>
+						<span>E宠价：</span>
 					</div>
 				</div>
 				<ul class="detal_my">
 					<li>我要</li>
-				<li class="detal_myli1">-</li>
+					<li class="detal_myli1">-</li>
 					<li class="detal_myli2">1</li>
-					<li class="detal_myli1">+</li>
+					<li class="detal_myli3">+</li>
 					<li>件</li>
 				</ul>
 				
@@ -452,48 +453,7 @@
 
 
 <script type="text/javascript">
-			var oZoomBox = document.getElementsByClassName("zoomBox")[0];
-			var oMidArea = document.getElementsByClassName("midArea")[0];
-			var oZoom = document.getElementsByClassName("zoom")[0];
-			var oBigArea = document.getElementsByClassName("bigArea")[0];
-			var oBigImg = oBigArea.children[0];
 			
-			oMidArea.onmouseover = function(){
-				oZoom.style.display = "block";
-				oBigArea.style.display = "block";
-			}
-			oMidArea.onmouseout = function(){
-				oZoom.style.display = "none";
-				oBigArea.style.display = "none";
-			}
-			oMidArea.onmousemove = function(e){
-				var evt = e || event;
-				var _left = evt.pageX -oZoomBox.offsetLeft - oZoom.offsetWidth/2;
-				var _top = evt.pageY - oZoomBox.offsetTop -oZoom.offsetHeight/2;
-				
-				
-				if(_left<=0){
-					_left = 0;
-				}
-				if(_left >= oMidArea.offsetWidth-oZoom.offsetWidth){
-					_left = oMidArea.offsetWidth-oZoom.offsetWidth;
-				}
-				
-				if(_top<=0){
-					_top = 0;
-				}
-				
-				if(_top>=oMidArea.offsetHeight-oZoom.offsetHeight){
-					_top=oMidArea.offsetHeight-oZoom.offsetHeight;
-				}
-				oZoom.style.left = _left + "px";
-				oZoom.style.top = _top + "px";
-				
-				//大图移动
-				oBigImg.style.left = -oZoom.offsetLeft/oMidArea.offsetWidth*oBigImg.offsetWidth + "px";
-				oBigImg.style.top = -oZoom.offsetTop/oMidArea.offsetHeight*oBigImg.offsetHeight + "px";
-				
-			}
 		
 			
 		</script>
