@@ -453,9 +453,25 @@
 
 
 <script type="text/javascript">
+			//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=aa&cb=bb
+			var oTxt = document.getElementById("txt");
+			var oList = document.getElementById("list");
+			oTxt.oninput = function(){
+				var val = oTxt.value;
+				var oScript = document.createElement("script");
+				oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+val+"&cb=bb";
+				document.body.appendChild(oScript);
+				document.body.removeChild(oScript);
+			}
 			
-		
-			
+			function bb(data){
+				var str = "";
+				var arr = data.s;
+				for(var i = 0; i <arr.length; i++){
+					str += "<li><a href='https://www.baidu.com/s?wd="+arr[i]+"'>"+arr[i]+"</a></li>";
+				}
+				oList.innerHTML = str;
+			}
 		</script>
 	</body>
 </html>
